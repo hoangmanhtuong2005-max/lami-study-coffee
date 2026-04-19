@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAMI STUDY COFFEE</title>
+  <style>
+    body {font-family: Arial; margin:0; background:#f5f5f5;}
+    header {background:#2c3e50; color:white; padding:20px; text-align:center;}
+    nav {background:#34495e; padding:10px; text-align:center;}
+    nav a {color:white; margin:0 15px; text-decoration:none;}
+    section {padding:20px;}
+    .card {background:white; padding:15px; margin:10px 0; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);} 
+    footer {background:#2c3e50; color:white; text-align:center; padding:15px;}
+    button {padding:10px 20px; background:#27ae60; color:white; border:none; border-radius:5px; cursor:pointer;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LAMI STUDY COFFEE</h1>
+  <p>Không gian học tập lý tưởng</p>
+</header>
+
+<nav>
+  <a href="#products">Sản phẩm</a>
+  <a href="#services">Dịch vụ</a>
+  <a href="#value">Giá trị</a>
+  <a href="#booking">Đặt bàn</a>
+</nav>
+
+<section id="products">
+  <h2>☕ Sản phẩm</h2>
+  <div class="card">
+    <h3>Đồ uống (25.000 - 45.000 VNĐ)</h3>
+    <ul>
+      <li>Cà phê đen</li>
+      <li>Cà phê sữa</li>
+      <li>Cappuccino</li>
+      <li>Trà đào</li>
+      <li>Trà chanh</li>
+      <li>Matcha latte</li>
+      <li>Nước ép trái cây</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Đồ ăn nhẹ</h3>
+    <ul>
+      <li>Bánh ngọt</li>
+      <li>Bánh mì</li>
+      <li>Bánh quy</li>
+      <li>Snack</li>
+    </ul>
+  </div>
+</section>
+
+<section id="services">
+  <h2>📚 Dịch vụ</h2>
+  <div class="card">
+    <ul>
+      <li>Không gian học tập yên tĩnh</li>
+      <li>Wifi tốc độ cao</li>
+      <li>Ổ cắm điện tại mỗi bàn</li>
+      <li>Ánh sáng tiêu chuẩn</li>
+      <li>Phòng học nhóm</li>
+      <li>Cho thuê chỗ ngồi theo giờ</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Phân khu chức năng</h3>
+    <ul>
+      <li>Silent Zone (Khu im lặng)</li>
+      <li>Khu học nhóm</li>
+      <li>Quick Break Zone</li>
+    </ul>
+  </div>
+</section>
+
+<section id="value">
+  <h2>✨ Giá trị mang lại</h2>
+  <div class="card">
+    <ul>
+      <li>Không gian học tập lý tưởng</li>
+      <li>Tăng khả năng tập trung</li>
+      <li>Tiện lợi vừa học vừa uống</li>
+      <li>Môi trường học tập cộng đồng</li>
+      <li>Nhạc trắng tăng tập trung</li>
+      <li>Thiết kế chống ồn</li>
+    </ul>
+  </div>
+</section>
+
+<section id="booking">
+  <h2>📅 Đặt bàn</h2>
+  <div class="card">
+    <form onsubmit="bookTable(event)">
+      <input type="text" placeholder="Tên của bạn" required><br><br>
+      <input type="number" placeholder="Số người" required><br><br>
+      <input type="datetime-local" required><br><br>
+      <button type="submit">Đặt bàn</button>
+    </form>
+    <p id="msg"></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 LAMI STUDY COFFEE</p>
+  <p>📞 Hotline: 0367873758</p>
+  <p>📧 Email: hoangmanhtuong2005@gmail.com</p>
+</footer>
+
+<script>
+function bookTable(e){
+  e.preventDefault();
+  document.getElementById("msg").innerText = "Đặt bàn thành công!";
+}
+</script>
+
+</body>
+</html>
